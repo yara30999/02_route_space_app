@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'colors_manager.dart';
 import 'styles_manager.dart';
 
@@ -17,6 +18,11 @@ ThemeData getDarkTheme() {
       shadowColor: ColorsManager.black,
       titleTextStyle: Styles.style24Bold(),
       toolbarTextStyle: Styles.style24Bold(),
+      systemOverlayStyle: const SystemUiOverlayStyle(
+        statusBarColor: ColorsManager.black, // Status bar color
+        statusBarIconBrightness: Brightness.light, // White icons
+        statusBarBrightness: Brightness.dark, // For iOS dark background
+      ),
     ),
 
     // text selection theme

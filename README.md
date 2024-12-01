@@ -2,15 +2,31 @@
 
 A new Flutter project.
 
-## Getting Started
+## 📸 Screens
 
-This project is a starting point for a Flutter application.
+ <img src="screens/3_login.jpg"> 
 
-A few resources to get you started if this is your first Flutter project:
+ <img src="screens/4_login.jpg"> 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ <img src="screens/5_home.jpg"> 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ <img src="screens/6_details.jpg"> 
+
+ ## 📹 Demo
+
+ <video width="600" controls>
+  <source src="screens/1_login.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+ <video width="600" controls>
+  <source src="screens/2_details_screen.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+<video width="600" controls>
+  <source src="screens/full.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+

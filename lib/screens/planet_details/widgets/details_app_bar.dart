@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../models/planet.dart';
-import '../../../resourses/colors_manager.dart';
 import '../../common_widgets/app_bar_background_image.dart';
 import '../../common_widgets/app_bar_gradiant.dart';
 import '../../common_widgets/app_bar_title.dart';
+import '../../common_widgets/rounded_back_botton.dart';
 
 class DetailsAppBar extends StatelessWidget {
   const DetailsAppBar({
@@ -30,18 +30,10 @@ class DetailsAppBar extends StatelessWidget {
           ),
           //top left back button
           Padding(
-            padding: const EdgeInsets.only(top: 6.0, left: 6.0),
-            child: InkWell(
-              onTap: () {
+              padding: const EdgeInsets.only(top: 6.0, left: 6.0),
+              child: RoundedBackButton(onTap: () {
                 Navigator.pop(context);
-              },
-              child: const CircleAvatar(
-                backgroundColor: ColorsManager.red,
-                radius: 22,
-                child: Icon(Icons.arrow_back),
-              ),
-            ),
-          ),
+              })),
         ],
       ),
     );

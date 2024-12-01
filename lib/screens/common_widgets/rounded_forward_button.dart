@@ -16,7 +16,7 @@ class RoundedForwardButton extends StatelessWidget {
       child: const CircleAvatar(
         backgroundColor: ColorsManager.red,
         radius: 22,
-        child: Icon(Icons.arrow_back),
+        child: Icon(Icons.arrow_forward),
       ),
     );
   }

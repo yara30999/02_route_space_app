@@ -68,6 +68,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Sun",
           planetImg: PngAssets.sun,
+          glb: GlbAssets.sun,
           planetTitle: 'Sun: The Heart of Solar System',
           about:
               "The Sun is the star at the center of the Solar System and provides energy and light essential for life on Earth.",
@@ -82,6 +83,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Mercury",
           planetImg: PngAssets.mercury,
+          glb: GlbAssets.mercury,
           planetTitle: 'Mercury: The Swift Planet',
           about:
               "Mercury is the smallest planet in the Solar System and the closest to the Sun. It has a rocky surface with extreme temperatures.",
@@ -96,6 +98,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Venus",
           planetImg: PngAssets.venus,
+          glb: GlbAssets.venus,
           planetTitle: 'Venus: The Veiled Beauty',
           about:
               "Venus is the second planet from the Sun and has a thick atmosphere rich in carbon dioxide, with high surface temperatures.",
@@ -110,6 +113,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Earth",
           planetImg: PngAssets.earth,
+          glb: GlbAssets.earth,
           planetTitle: 'Earth: Our Blue Marble',
           about:
               "Earth is the only known planet in the universe that supports life. Its unique combination of factors, including liquid water, a breathable atmosphere, and a suitable distance from the Sun, has created the ideal conditions for the development of complex organisms. Earth's magnetic field protects it from harmful solar radiation, and its atmosphere helps to regulate temperature and weather patterns.",
@@ -124,6 +128,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Mars",
           planetImg: PngAssets.mars,
+          glb: GlbAssets.mars,
           planetTitle: 'Mars: The Red Frontier',
           about:
               "Mars is known as the Red Planet due to its reddish appearance caused by iron oxide on its surface.",
@@ -138,6 +143,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Jupiter",
           planetImg: PngAssets.jupiter,
+          glb: GlbAssets.jupiter,
           planetTitle: 'Jupiter: The Giant King',
           about:
               "Jupiter is the largest planet in the Solar System, with a strong magnetic field and at least 79 moons.",
@@ -152,6 +158,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Saturn",
           planetImg: PngAssets.saturn,
+          glb: GlbAssets.saturn,
           planetTitle: 'Saturn: The Ringed Wonder',
           about:
               "Saturn is famous for its prominent ring system, composed of ice particles and rocky debris.",
@@ -166,6 +173,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Uranus",
           planetImg: PngAssets.uranus,
+          glb: GlbAssets.uranus,
           planetTitle: 'Uranus: The Tilted Ice Giant',
           about:
               "Uranus has a unique blue-green color due to methane in its atmosphere and rotates on its side.",
@@ -180,6 +188,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Neptune",
           planetImg: PngAssets.neptune,
+          glb: GlbAssets.neptune,
           planetTitle: 'Neptune: The Windy World',
           about:
               "Neptune is the furthest planet from the Sun, with strong winds and a vibrant blue appearance.",

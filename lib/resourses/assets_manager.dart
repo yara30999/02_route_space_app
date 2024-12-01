@@ -1,5 +1,5 @@
 const String pngPath = 'assets/png';
-const String svgPath = 'assets/svg';
+const String glbPath = 'assets/glb';
 
 class PngAssets {
   static const String login = '$pngPath/login.png';
@@ -15,4 +15,15 @@ class PngAssets {
   static const String venus = '$pngPath/venus.png';
 }
 
-class SvgAssets {}
+class GlbAssets {
+  static const String earth = '$pngPath/earth.glb';
+  static const String jupiter = '$glbPath/jupiter.glb';
+  static const String mars = '$glbPath/mars.glb';
+  static const String mercury = '$glbPath/mercury.glb';
+  static const String neptune = '$glbPath/neptune.glb';
+  static const String saturn = '$glbPath/saturn.glb';
+  static const String sun = '$glbPath/sun.glb';
+  static const String uranus = '$glbPath/uranus.glb';
+  static const String venus = '$glbPath/venus.glb';
+  static const String solarSystem = '$glbPath/solar_system.glb';
+}

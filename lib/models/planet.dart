@@ -1,5 +1,5 @@
 class PlanetModel {
-  final String planetName, planetTitle, planetImg, about;
+  final String planetName, planetTitle, planetImg, about, glb;
   final double distanceFromSun,
       lengthOfDay,
       orbitalPeriod,
@@ -10,6 +10,7 @@ class PlanetModel {
   PlanetModel({
     required this.planetName,
     required this.planetImg,
+    required this.glb,
     required this.planetTitle,
     required this.about,
     required this.distanceFromSun,

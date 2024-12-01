@@ -12,9 +12,9 @@ ThemeData getDarkTheme() {
     //app bar theme
     appBarTheme: AppBarTheme(
       centerTitle: true,
-      backgroundColor: ColorsManager.white,
-      //titleSpacing: 0,
-      elevation: 8,
+      backgroundColor: ColorsManager.black,
+      titleSpacing: 0,
+      elevation: 0,
       shadowColor: ColorsManager.black,
       titleTextStyle: Styles.style24Bold(),
       toolbarTextStyle: Styles.style24Bold(),
@@ -41,7 +41,7 @@ ThemeData getDarkTheme() {
         foregroundColor: ColorsManager.white,
         backgroundColor: ColorsManager.red,
         textStyle: Styles.style20Bold(),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
       ),
     ),
   );

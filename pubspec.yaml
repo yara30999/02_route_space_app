@@ -64,6 +64,15 @@ flutter:
   assets:
     - assets/png/login.png
     - assets/png/app_bar_img.png
+    - assets/png/earth.png
+    - assets/png/jupiter.png
+    - assets/png/mars.png
+    - assets/png/mercury.png
+    - assets/png/neptune.png 
+    - assets/png/saturn.png
+    - assets/png/sun.png
+    - assets/png/uranus.png
+    - assets/png/venus.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../resourses/assets_manager.dart';
 import '../../resourses/routes_manager.dart';
 import '../../resourses/styles_manager.dart';
+import '../common_widgets/custom_elevated_button.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -32,17 +33,11 @@ class LoginScreen extends StatelessWidget {
               padding: const EdgeInsets.all(
                 16.0,
               ),
-              child: ElevatedButton(
-                onPressed: () {
+              child: CustomElevatedButton(
+                label: 'Explore',
+                onPress: () {
                   Navigator.pushNamed(context, Routes.homeRoute);
                 },
-                child: const SizedBox(
-                  height: 60,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text('Explore'), Icon(Icons.arrow_forward)],
-                  ),
-                ),
               ),
             ),
           ),

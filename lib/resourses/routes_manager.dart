@@ -5,6 +5,7 @@ import '../screens/login/login_screen.dart';
 class Routes {
   static const String loginRoute = "/";
   static const String homeRoute = "/home_route";
+  static const String planetDetailsRoute = "/planet_details_route";
 }
 
 class RouteGenerator {

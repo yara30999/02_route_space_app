@@ -3,6 +3,7 @@ const String glbPath = 'assets/glb';
 
 class PngAssets {
   static const String login = '$pngPath/login.png';
+  static const String fullLogin = '$pngPath/full_login.png';
   static const String appBarImg = '$pngPath/app_bar_img.png';
   static const String earth = '$pngPath/earth.png';
   static const String jupiter = '$pngPath/jupiter.png';
@@ -25,5 +26,5 @@ class GlbAssets {
   static const String sun = '$glbPath/sun.glb';
   static const String uranus = '$glbPath/uranus.glb';
   static const String venus = '$glbPath/venus.glb';
-  static const String solarSystem = '$glbPath/solar_system.glb';
+  static const String solarSystem = '$glbPath/assets/glb/solar_system.glb';
 }

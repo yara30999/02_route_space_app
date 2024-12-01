@@ -70,6 +70,7 @@ flutter:
     - assets/png/sun.png
     - assets/png/uranus.png
     - assets/png/venus.png
+    - assets/png/full_login.png
     - assets/glb/
 
   # An image asset can refer to one or more resolution-specific "variants", see

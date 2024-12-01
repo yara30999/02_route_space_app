@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../models/planet.dart';
 import '../../resourses/assets_manager.dart';
+import '../../resourses/colors_manager.dart';
+import '../../resourses/routes_manager.dart';
 import '../../resourses/styles_manager.dart';
 import '../common_widgets/app_bar_background_image.dart';
 import '../common_widgets/app_bar_gradiant.dart';
@@ -97,6 +99,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Sun",
           planetImg: PngAssets.sun,
+          planetTitle: 'Sun: The Heart of Solar System',
           about:
               "The Sun is the star at the center of the Solar System and provides energy and light essential for life on Earth.",
           distanceFromSun: 0.0,
@@ -110,6 +113,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Mercury",
           planetImg: PngAssets.mercury,
+          planetTitle: 'Mercury: The Swift Planet',
           about:
               "Mercury is the smallest planet in the Solar System and the closest to the Sun. It has a rocky surface with extreme temperatures.",
           distanceFromSun: 57.91, // Million kilometers
@@ -123,6 +127,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Venus",
           planetImg: PngAssets.venus,
+          planetTitle: 'Venus: The Veiled Beauty',
           about:
               "Venus is the second planet from the Sun and has a thick atmosphere rich in carbon dioxide, with high surface temperatures.",
           distanceFromSun: 108.2, // Million kilometers
@@ -136,8 +141,9 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Earth",
           planetImg: PngAssets.earth,
+          planetTitle: 'Earth: Our Blue Marble',
           about:
-              "Earth is the only known planet to support life, with water, a breathable atmosphere, and a magnetic field protecting it.",
+              "Earth is the only known planet in the universe that supports life. Its unique combination of factors, including liquid water, a breathable atmosphere, and a suitable distance from the Sun, has created the ideal conditions for the development of complex organisms. Earth's magnetic field protects it from harmful solar radiation, and its atmosphere helps to regulate temperature and weather patterns.",
           distanceFromSun: 149.6, // Million kilometers
           lengthOfDay: 24.0, // In hours
           orbitalPeriod: 365.25, // In Earth days
@@ -149,6 +155,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Mars",
           planetImg: PngAssets.mars,
+          planetTitle: 'Mars: The Red Frontier',
           about:
               "Mars is known as the Red Planet due to its reddish appearance caused by iron oxide on its surface.",
           distanceFromSun: 227.9, // Million kilometers
@@ -162,6 +169,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Jupiter",
           planetImg: PngAssets.jupiter,
+          planetTitle: 'Jupiter: The Giant King',
           about:
               "Jupiter is the largest planet in the Solar System, with a strong magnetic field and at least 79 moons.",
           distanceFromSun: 778.5, // Million kilometers
@@ -175,6 +183,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Saturn",
           planetImg: PngAssets.saturn,
+          planetTitle: 'Saturn: The Ringed Wonder',
           about:
               "Saturn is famous for its prominent ring system, composed of ice particles and rocky debris.",
           distanceFromSun: 1434.0, // Million kilometers
@@ -188,6 +197,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Uranus",
           planetImg: PngAssets.uranus,
+          planetTitle: 'Uranus: The Tilted Ice Giant',
           about:
               "Uranus has a unique blue-green color due to methane in its atmosphere and rotates on its side.",
           distanceFromSun: 2871.0, // Million kilometers
@@ -201,6 +211,7 @@ class _HomeBodyState extends State<HomeBody> {
         PlanetModel(
           planetName: "Neptune",
           planetImg: PngAssets.neptune,
+          planetTitle: 'Neptune: The Windy World',
           about:
               "Neptune is the furthest planet from the Sun, with strong winds and a vibrant blue appearance.",
           distanceFromSun: 4495.0, // Million kilometers
@@ -238,30 +249,35 @@ class _HomeBodyState extends State<HomeBody> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.all(20),
+              //button
+              InkWell(
+                onTap: _goPrevious,
+                child: const CircleAvatar(
+                  backgroundColor: ColorsManager.red,
+                  radius: 22,
+                  child: Icon(Icons.arrow_back),
                 ),
-                onPressed: _goPrevious,
-                child: const Icon(Icons.arrow_back),
               ),
               Text(
                 _planetName,
                 style: Styles.style24Bold(),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.all(20),
+              //button
+              InkWell(
+                onTap: _goNext,
+                child: const CircleAvatar(
+                  backgroundColor: ColorsManager.red,
+                  radius: 22,
+                  child: Icon(Icons.arrow_forward),
                 ),
-                onPressed: _goNext,
-                child: const Icon(Icons.arrow_forward),
               ),
             ],
           ),
           CustomElevatedButton(
             label: 'Explore $_planetName',
             onPress: () {
-              //Navigator.pushNamed(context, Routes.homeRoute);
+              Navigator.pushNamed(context, Routes.planetDetailsRoute,
+                  arguments: planets[_controller.page!.toInt()]);
             },
           ),
         ],

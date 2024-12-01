@@ -25,7 +25,9 @@ class AppBarTitle extends StatelessWidget {
           // Bottom-Left Title
           Align(
             alignment: Alignment.bottomLeft,
-            child: Text(bottomLeftTitle, style: Styles.style24Bold()),
+            child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(bottomLeftTitle, style: Styles.style24Bold())),
           ),
         ],
       ),

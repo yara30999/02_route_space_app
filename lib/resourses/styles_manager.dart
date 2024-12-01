@@ -41,4 +41,13 @@ abstract class Styles {
       color: ColorsManager.white,
     );
   }
+
+  static TextStyle style16Bold() {
+    return const TextStyle(
+      fontFamily: FontConstants.fontInter,
+      fontSize: 16,
+      fontWeight: FontWeight.w700,
+      color: ColorsManager.white,
+    );
+  }
 }

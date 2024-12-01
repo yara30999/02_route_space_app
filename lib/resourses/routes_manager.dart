@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/login/login_screen.dart';
 
 class Routes {
   static const String loginRoute = "/";
@@ -8,8 +9,8 @@ class Routes {
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
-      // case Routes.loginRoute:
-      //   return MaterialPageRoute(builder: (_) => const LoginScreen());
+      case Routes.loginRoute:
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
       // case Routes.homeRoute:
       //   return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:

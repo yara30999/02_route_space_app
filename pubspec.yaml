@@ -93,6 +93,8 @@ flutter:
           weight: 300
         - asset: assets/inter_font/Inter_18pt-Light.ttf
           weight: 300
+        - asset: assets/inter_font/Inter_24pt-Bold.ttf
+          weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

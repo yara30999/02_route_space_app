@@ -35,7 +35,7 @@ ThemeData getDarkTheme() {
         foregroundColor: ColorsManager.white,
         backgroundColor: ColorsManager.red,
         textStyle: Styles.style20Bold(),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
     ),
   );

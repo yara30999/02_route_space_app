@@ -10,7 +10,7 @@ abstract class Styles {
     return const TextStyle(
       fontFamily: FontConstants.fontInter,
       fontSize: 48,
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.w900,
       color: ColorsManager.white,
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../resourses/assets_manager.dart';
+import '../../resourses/routes_manager.dart';
 import '../../resourses/styles_manager.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -32,7 +33,9 @@ class LoginScreen extends StatelessWidget {
                 16.0,
               ),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.homeRoute);
+                },
                 child: const SizedBox(
                   height: 60,
                   child: Row(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/home/home_screen.dart';
 import '../screens/login/login_screen.dart';
 
 class Routes {
@@ -11,8 +12,8 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.loginRoute:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
-      // case Routes.homeRoute:
-      //   return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case Routes.homeRoute:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:
         return unDefinedRoute();
     }
